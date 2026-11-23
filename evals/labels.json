@@ -1,0 +1,152 @@
+[
+  {
+    "company": "plausible",
+    "website": "https://plausible.io",
+    "policy_url": "https://plausible.io/privacy",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "Plausible Insights OÜ Tartu, Estonia Contact: privacy@plausible.io For full company details, see our imprint", "why": "Legal name, location and a privacy email are given."},
+      "dpo_contact": {"status": "missing", "quote": "", "why": "No data protection officer is mentioned."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "Contract: to provide the Plausible Analytics service, including account access, billing and essential functionality such as maintaining logged-in sessions", "why": "Purposes are tied to named legal bases (contract, legitimate interest)."},
+      "recipients": {"status": "present", "quote": "Hetzner (European, Germany): server infrastructure and hosting", "why": "Subprocessors are named with their roles."},
+      "international_transfers": {"status": "present", "quote": "Where we use third-party providers outside the European Union, we ensure appropriate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission.", "why": "Says some providers are outside the EU and names SCCs."},
+      "retention": {"status": "present", "quote": "We retain your information for as long as your account is active and as necessary to provide you with the service.", "why": "Borderline: tied to the account's lifetime, a criterion beyond bare 'as long as necessary'."},
+      "user_rights": {"status": "present", "quote": "Request deletion of your data", "why": "Lists access, correction, deletion and objection (four rights)."},
+      "complaint_right": {"status": "missing", "quote": "", "why": "No mention of complaining to a supervisory authority."}
+    }
+  },
+  {
+    "company": "monzo",
+    "website": "https://monzo.com",
+    "policy_url": "https://monzo.com/legal/privacy-notice",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "We're Monzo Bank Limited ('we', 'our', 'us') and operate under the name Monzo.", "why": "Legal name, with email and postal address under 'Getting in touch'."},
+      "dpo_contact": {"status": "present", "quote": "You can also reach our Data Protection Officer (DPO) at dpo@monzo.com .", "why": "DPO with an email address."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "Our legal basis for sharing your information for these reasons is contractual necessity: we need to use your data for a contract we have with you.", "why": "Uses are grouped under each lawful basis."},
+      "recipients": {"status": "present", "quote": "We work with TransUnion, Experian and Equifax.", "why": "Names recipient companies and lists categories of recipients."},
+      "international_transfers": {"status": "present", "quote": "we've agreed specific contracts approved for use in the UK which give personal data the same protection it has in the UK.", "why": "Data may leave the UK; adequacy and UK-approved contracts are the safeguards."},
+      "retention": {"status": "present", "quote": "We’ll keep your information for 10 years after your account closes, in case we need to respond to a legal claim.", "why": "Concrete periods and criteria."},
+      "user_rights": {"status": "present", "quote": "ask for a copy of your personal data in a portable (machine-readable) format or make us send it to someone else", "why": "Lists all six rights."},
+      "complaint_right": {"status": "present", "quote": "If you're still not happy, you can refer your complaint to the Information Commissioner’s Office (ICO), the UK regulator for data protection issues.", "why": "Names the ICO."}
+    }
+  },
+  {
+    "company": "duckduckgo",
+    "website": "https://duckduckgo.com",
+    "policy_url": "https://duckduckgo.com/privacy",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "Mailing address: DuckDuckGo, 20 Paoli Pike, Paoli, PA 19301 U.S.A.", "why": "The policy names Duck Duck Go, Inc.; the Privacy Rights page it links to gives email, phone and postal address."},
+      "dpo_contact": {"status": "missing", "quote": "", "why": "No data protection officer is mentioned (only a Privacy Manager and Article 27 representatives)."},
+      "purposes_and_legal_basis": {"status": "unclear", "quote": "However, we only use this information temporarily to deliver content to you and, for security, to ensure you’re not a malicious bot.", "why": "Purposes are described but no legal basis is named."},
+      "recipients": {"status": "present", "quote": "In that process, your communication may be accessible to the software-as-a-service providers we use in our corporate systems (such as our company email, project management software, and customer support vendors).", "why": "Names kinds of recipients."},
+      "international_transfers": {"status": "unclear", "quote": "In such scenarios, if any cross-border transfers are necessary, we will follow applicable legal requirements.", "why": "Admits cross-border transfers but names no safeguard."},
+      "retention": {"status": "unclear", "quote": "We will limit its use by only keeping it for as long as necessary for the stated purpose, and we will protect it by keeping it secure and deleting it when it is no longer required, unless a longer period is required by law.", "why": "Only 'as long as necessary' in general."},
+      "user_rights": {"status": "present", "quote": "For information about these rights, such as requesting deletion or a copy of your personal information, please review our Privacy Rights page .", "why": "The linked Privacy Rights page lists access, deletion, correction, limiting processing and objection."},
+      "complaint_right": {"status": "present", "quote": "You can also lodge a complaint under the laws of your country with an applicable regulator.", "why": "On the Privacy Rights page the policy links to."}
+    }
+  },
+  {
+    "company": "proton",
+    "website": "https://proton.me",
+    "policy_url": "https://proton.me/legal/privacy",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "The Services are operated by Proton AG (the “Company”, “We”), domiciled at Route de la Galaise 32, 1228 Plan-les-Ouates, Geneva, Switzerland.", "why": "Legal name with postal address."},
+      "dpo_contact": {"status": "missing", "quote": "", "why": "No data protection officer is mentioned (only an EU Article 27 representative)."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "The legal basis of these processing activities is the necessity to the execution of the contract to provide the Services.", "why": "Each processing activity states its purpose and legal basis."},
+      "recipients": {"status": "present", "quote": "We rely on Chargebee to process payments.", "why": "Names processors."},
+      "international_transfers": {"status": "present", "quote": "Guarantees for international transfer: Standard Contractual Clauses, Binding Corporate Rules, Certifications", "why": "Lists processing locations and the safeguard for each processor."},
+      "retention": {"status": "unclear", "quote": "The period of temporary data retention is determined by our legitimate interests of protecting the service from spam, and also by any applicable Swiss legal requirements we must comply with.", "why": "Only scattered, vague notes; no periods and no general rule for account data."},
+      "user_rights": {"status": "present", "quote": "Through your Account interface, you can directly access, edit, delete, or export personal data processed by the Company in your use of the Services.", "why": "Access, correction, deletion and portability (four rights)."},
+      "complaint_right": {"status": "present", "quote": "In case of violation of your rights, you have the right to lodge a complaint to the competent supervisory authority.", "why": "States the right to complain to a supervisory authority."}
+    }
+  },
+  {
+    "company": "deepl",
+    "website": "https://www.deepl.com",
+    "policy_url": "https://www.deepl.com/en/privacy",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "Germany: DeepL SE and DeepL AI GmbH of Maarweg 165, 50825 Cologne", "why": "Legal entities with postal addresses plus a privacy email."},
+      "dpo_contact": {"status": "present", "quote": "DeepL's external corporate Data Protection Officer, Dr. Christian Lenz, can be contacted at the following address: dhpg IT-Services GmbH, Bunsenstr. 10a, 51647 Gummersbach, via email to datenschutz(at)dhpg.de, or by telephone on +49 2261 8195 0.", "why": "DPO with address, email and phone."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "We process the email address and password on the basis of Art. 6 para. 1 sentence 1 lit. b) GDPR in order to perform the contract of use.", "why": "Each purpose cites its Article 6 basis."},
+      "recipients": {"status": "present", "quote": "In order to process payments, we forward the necessary payment data to our authorized payment service provider Stripe Payments Europe Ltd., Block 4, Harcourt Centre, Harcourt Road, Dublin 2, Ireland (“Stripe”).", "why": "Names many recipient companies."},
+      "international_transfers": {"status": "unclear", "quote": "As part of this, your data may also be transferred to the USA.", "why": "Borderline: most US transfers name no safeguard; only one adequacy decision is named."},
+      "retention": {"status": "present", "quote": "The data is stored in a database that can only be accessed by selected employees and is automatically deleted after 14 days.", "why": "Concrete periods."},
+      "user_rights": {"status": "present", "quote": "Right to restriction of processing - Should you wish to restrict use, we will comply with your request as far as legally possible.", "why": "Access, rectification, erasure, restriction and objection."},
+      "complaint_right": {"status": "present", "quote": "You also have the right to complain to the regulator about the DeepL’s processing activities and compliance under applicable data protection legislation.", "why": "Names regulators."}
+    }
+  },
+  {
+    "company": "37signals",
+    "website": "https://37signals.com/policies/privacy",
+    "policy_url": "https://37signals.com/policies/privacy",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "If you have questions about exercising these rights or need assistance, please contact us at privacy@37signals.com or at 37signals LLC, 137 N. Oak Park Avenue, Suite 208, Oak Park, IL 60301 USA.", "why": "Legal name with postal address and email."},
+      "dpo_contact": {"status": "missing", "quote": "", "why": "No data protection officer is mentioned."},
+      "purposes_and_legal_basis": {"status": "unclear", "quote": "We have a legitimate interest in protecting our apps and the broader Internet community from credential stuffing attacks and spam.", "why": "A legal basis is given only for isolated cases, not for the processing generally."},
+      "recipients": {"status": "present", "quote": "We use some third-party subprocessors to help run our applications and provide the Services to you.", "why": "Names kinds of recipients and links subprocessor lists."},
+      "international_transfers": {"status": "present", "quote": "Accordingly, 37signals has adopted a data processing addendum with Standard Contractual Clauses to help ensure this protection.", "why": "EU/UK data goes to the US under SCCs."},
+      "retention": {"status": "present", "quote": "Altogether, any content trashed in your product accounts should be purged from all of our systems and logs within 90 days.", "why": "Real periods plus criteria."},
+      "user_rights": {"status": "present", "quote": "You have the right, in certain situations, to object to how or why your personal information is processed.", "why": "Lists all six rights."},
+      "complaint_right": {"status": "present", "quote": "You also have the right to lodge a complaint with a supervisory authority.", "why": "States the right to complain."}
+    }
+  },
+  {
+    "company": "github",
+    "website": "https://github.com",
+    "policy_url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "It applies to the Personal Data that GitHub, Inc. or GitHub B.V., processes as the “Data Controller” when you interact with websites, applications, and services that display this Statement (collectively, “Services”).", "why": "Names the controllers; Contact Us gives postal addresses and a form."},
+      "dpo_contact": {"status": "present", "quote": "Contact us via our contact form or by emailing our Data Protection Officer at dpo[at]github[dot]com.", "why": "DPO email address."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "Legitimate Interests: We process data for purposes that are in our legitimate interests, such as securing our Services, communicating with you, and developing and improving our Services, which include artificial intelligence and machine learning technologies.", "why": "Purposes and a lawful-bases section."},
+      "recipients": {"status": "present", "quote": "Subprocessors and Service Providers: We may use vendors to provide services on our behalf, including hosting, marketing, advertising, social, analytics, support ticketing, credit card processing, or security services.", "why": "Recipient categories and a subprocessor list."},
+      "international_transfers": {"status": "present", "quote": "When we engage in such transfers, we generally rely on the standard contractual clauses published by the European Commission under Commission Implementing Decision 2021/914 , to help protect your rights and enable these protections to travel with your data.", "why": "SCCs and the EU-U.S. Data Privacy Framework."},
+      "retention": {"status": "present", "quote": "We’ll retain your Personal Data as long as your account is active and as needed to fulfill contractual obligations, comply with legal requirements, resolve disputes, and enforce agreements.", "why": "Criteria beyond 'as long as necessary'."},
+      "user_rights": {"status": "present", "quote": "The right to erase or limit the processing of your Personal Data under specific conditions", "why": "Lists all six rights."},
+      "complaint_right": {"status": "present", "quote": "Depending on your region, you have the right to complain to your local Data Protection Authority.", "why": "States the right to complain."}
+    }
+  },
+  {
+    "company": "mozilla",
+    "website": "https://www.mozilla.org/en-US/privacy/websites/",
+    "policy_url": "https://www.mozilla.org/en-US/privacy/websites/",
+    "labels": {
+      "controller_identity": {"status": "unclear", "quote": "If you have any other questions regarding personal data or our privacy practices, please contact us at compliance@mozilla.com .", "why": "A contact email, but only the brand name, no legal entity."},
+      "dpo_contact": {"status": "missing", "quote": "", "why": "No data protection officer is mentioned."},
+      "purposes_and_legal_basis": {"status": "unclear", "quote": "We may use cookies, clear GIFs, third-party web analytics, device information, and IP addresses for functionality and to better understand user interaction with our products, services, and communications.", "why": "Purposes but no legal basis."},
+      "recipients": {"status": "present", "quote": "Our email management vendors are SalesForce , Amazon Simple Email Service , Mailchimp , SocketLabs , Campaign Monitor , or Braze , and you can unsubscribe using the link at the bottom of the relevant email.", "why": "Names specific vendors."},
+      "international_transfers": {"status": "missing", "quote": "", "why": "Nothing about transfers outside the EU/EEA."},
+      "retention": {"status": "unclear", "quote": "We use Braze , Salesforce , Fundraise Up and Campaign Monitor to email receipts and store records, which are retained for 10 years from the date of last payment.", "why": "A period only for payment records."},
+      "user_rights": {"status": "unclear", "quote": "We respond to all requests we receive from individuals wishing to exercise their data protection rights in accordance with applicable data protection laws.", "why": "Rights mentioned but not four of them named."},
+      "complaint_right": {"status": "missing", "quote": "", "why": "No mention of a data protection authority."}
+    }
+  },
+  {
+    "company": "spotify",
+    "website": "https://www.spotify.com/uk/legal/privacy-policy/",
+    "policy_url": "https://www.spotify.com/uk/legal/privacy-policy/",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "write to us at: Spotify AB, Regeringsgatan 19, 111 53 Stockholm, Sweden, Attn: Data Protection Officer", "why": "Spotify AB with a postal address and email."},
+      "dpo_contact": {"status": "present", "quote": "For any questions or concerns about this Policy, contact our Data Protection Officer any one of these ways:", "why": "The DPO's email and postal address follow."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "our legal justifications (each called a ' legal basis ') under data protection law, for each purpose", "why": "A table maps each purpose to its legal basis."},
+      "recipients": {"status": "present", "quote": "This section sets out who receives personal data which is collected or generated through your use of the Spotify Service.", "why": "Tables of recipient categories."},
+      "international_transfers": {"status": "present", "quote": "Transfers of personal data to other countries outside of the EU/EEA are protected by Standard Contractual Clauses (‘SCCs’) as the appropriate safeguard.", "why": "Adequacy decisions and SCCs."},
+      "retention": {"status": "present", "quote": "For example, personal data you may input as part of search queries is deleted after 90 days.", "why": "Categories with criteria and real periods."},
+      "user_rights": {"status": "present", "quote": "Request access to the personal data we process about you.", "why": "Lists all six rights."},
+      "complaint_right": {"status": "present", "quote": "Contact the Swedish Authority for Privacy Protection or your local data protection authority about any questions or concerns.", "why": "Names the Swedish authority and local DPAs."}
+    }
+  },
+  {
+    "company": "flutterwave",
+    "website": "https://flutterwave.com/gb/privacy-policy",
+    "policy_url": "https://flutterwave.com/us/privacy-notice",
+    "labels": {
+      "controller_identity": {"status": "present", "quote": "We are Flutterwave Incorporated (“Flutterwave”), a company incorporated under the laws of California, United States with its registered office at 2261 Market Street, Suite 85079, San Francisco, CA 94114.", "why": "Legal name, registered address and a privacy email."},
+      "dpo_contact": {"status": "unclear", "quote": "Flutterwave has appointed a Data Protection Officer (DPO) responsible for overseeing compliance with the Data Protection Legislation.", "why": "A DPO is mentioned, but no contact is stated as the DPO's."},
+      "purposes_and_legal_basis": {"status": "present", "quote": "The legal basis we rely on for processing your Personal Information are:", "why": "Purposes and the bases consent, contract, legal obligation and legitimate interest."},
+      "recipients": {"status": "present", "quote": "We share your data with our third party providers or service providers, financial partners or suppliers for the purpose of effectively providing our Services to you.", "why": "Names kinds of recipients."},
+      "international_transfers": {"status": "present", "quote": "We may use any of the data transfer mechanisms like checking that the data protection laws of the recipient country are adequate, the existence of appropriate safeguards like standard contractual clauses or other data transfer mechanisms stipulated by the Data Protection Legislation.", "why": "Adequacy and SCCs, though hedged with 'may'."},
+      "retention": {"status": "present", "quote": "If you close your Account, your data is stored on our servers to the extent necessary to comply with regulatory and Anti-Money Laundering obligations and for the purpose of fraud monitoring, detection and prevention.", "why": "Criteria (AML and regulatory obligations), not only 'as long as necessary'."},
+      "user_rights": {"status": "present", "quote": "Right to object to processing: You have the right to object to or restrict the processing of your Personal Information in certain circumstances.", "why": "Lists all six rights."},
+      "complaint_right": {"status": "unclear", "quote": "We may request additional details from you regarding your inquiries and keep records of your requests and resolution. here", "why": "Only a bare 'here' linked to the ICO complaint page; no stated right to complain."}
+    }
+  }
+]
