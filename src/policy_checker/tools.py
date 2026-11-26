@@ -14,6 +14,7 @@ MAX_LINKS = 40
 MAX_SECTION_CHARS = 6000
 MAX_SEARCH_HITS = 8
 LINK_WORDS = ["privacy", "cookie", "data", "gdpr", "rights", "legal", "policy", "protection"]
+BLOCKED = "Blocked:"  # how a refused fetch starts, so the trace shows it was refused
 
 
 class Browser:
@@ -23,15 +24,36 @@ class Browser:
     check at the end can look at exactly the text the model saw.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, website: str) -> None:
+        self.site = site_of(website)
         self.pages: dict[str, Page] = {}
+        self.links_seen: set[str] = set()
+
+    def allowed(self, url: str) -> bool:
+        """The agent may open pages on the website it was given, and any address that a page
+        it has read links to. Anything else is an address the model wrote itself.
+
+        This matters because a page can tell the model to fetch an address with data stuck on
+        the end (like ?findings=...), which would send that data to whoever owns the address.
+        The model might obey, so code decides which addresses are allowed, not the model.
+        """
+        host = site_of(url)
+        on_site = host == self.site or host.endswith("." + self.site)
+        return on_site or url in self.links_seen
 
     def fetch_page(self, url: str) -> dict:
+        if not self.allowed(url):
+            return {
+                "error": f"{BLOCKED} this address isn't on the website you were given and no "
+                "page you read links to it.",
+                "url": url,
+            }
         try:
             page = fetch(url)
         except PageError as error:
             return {"error": str(error), "url": url}
         self.pages[page.url] = page
+        self.links_seen.update(link.url for link in page.links)
         if url != page.url:
             self.pages[url] = page  # so the model can keep using the address it asked for
 
@@ -88,6 +110,13 @@ class Browser:
                         {"heading": section.heading, "text": paragraph[start : start + 1000]}
                     )
         return {"url": page.url, "matches": len(hits), "results": hits[:MAX_SEARCH_HITS]}
+
+
+def site_of(url: str) -> str:
+    """The host name of an address, without "www.", like "monzo.com"."""
+    if not url.startswith(("http://", "https://")):
+        url = "https://" + url
+    return urlparse(url).netloc.lower().removeprefix("www.")
 
 
 def _useful_links(page: Page) -> list[dict]:
