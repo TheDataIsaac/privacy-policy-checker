@@ -1,4 +1,4 @@
-"""Command line entry point: policy check, trace, evals, mcp."""
+"""Command line entry point: policy check, trace, evals, attacks, mcp."""
 
 from pathlib import Path
 from typing import Annotated
@@ -59,6 +59,16 @@ def evals(
     from policy_checker.evals import run
 
     run(labels, RUNS, limit)
+
+
+@app.command()
+def attacks(
+    runs: Annotated[int, typer.Option(help="Runs per test page.")] = 5,
+) -> None:
+    """Run the agent on the prompt injection test pages and count how often it obeys them."""
+    from policy_checker.attacks import run
+
+    run(runs, RUNS)
 
 
 @app.command()
